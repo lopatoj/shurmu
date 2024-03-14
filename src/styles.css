@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Chivo", sans-serif;
+  font-weight: lighter;
+
+  background-color: rgb(15, 20, 16);
+  color: rgb(255, 255, 255);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.width {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: left;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ~/components/link.ts */
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.link:hover {
+  color: rgb(192, 192, 192);
+}
+
+.link:active {
+  color: rgb(116, 116, 116)
+}
+
+/* ~/components/header.ts */
+.header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  
+  font-size: 1rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
